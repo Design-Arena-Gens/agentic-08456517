@@ -1,0 +1,146 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.demo {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 16px 40px -28px rgba(15, 23, 42, 0.35);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.demo__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.demo__header h2 {
+  margin: 0;
+}
+
+.demo__header button {
+  border: none;
+  background: #1d4ed8;
+  color: white;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.demo__header button:hover {
+  transform: translateY(-1px);
+}
+
+.demo__transcript {
+  display: grid;
+  gap: 1rem;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.bubble {
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+  line-height: 1.6;
+}
+
+.bubble header {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.bubble--assistant {
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+  justify-self: flex-start;
+}
+
+.bubble--user {
+  background: linear-gradient(135deg, #f1f5f9, #fef3c7);
+  justify-self: flex-end;
+}
+
+.demo__form {
+  display: grid;
+  gap: 1rem;
+}
+
+.demo__form textarea {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid #cbd5f5;
+  padding: 1rem;
+  resize: vertical;
+  min-height: 140px;
+  font-size: 1rem;
+}
+
+.demo__form button {
+  justify-self: flex-end;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.demo__form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px -18px rgba(59, 130, 246, 0.6);
+}
+
+.demo__form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+  box-shadow: none;
+}
+
+.demo__analysis {
+  background: #f8fafc;
+  border: 1px dashed #cbd5f5;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.demo__analysis h3 {
+  margin: 0;
+}
